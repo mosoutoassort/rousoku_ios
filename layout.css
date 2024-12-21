@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    font-size: 1.4rem;
+}
+.wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+}
+.model {
+    margin: 0 auto;
+    max-width: 600px;
+    height: 400px;
+}
+img {
+    max-width: 100%;
+}
+.text {
+    padding: 0 1rem;
+}

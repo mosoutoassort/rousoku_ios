@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAR Example</title>
+    <!-- Loads <model-viewer> for modern browsers -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <!-- Loads <model-viewer> for older browsers -->
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>3Dモデル：ろうそく</h1>
+        <figure class="img">
+            <model-viewer 
+                class="model" 
+                preload 
+                poster="rousoku.png" 
+                ios-src="rousoku.usdz" 
+                src="rousoku.gltf" 
+                auto-rotate 
+                camera-controls 
+                ar 
+                alt="ろうそくの3Dモデル">
+            </model-viewer>
+        </figure>
+        <p class="text">モデルが表示されない場合、対応デバイスまたはブラウザを確認してください。</p>
+    </div>
+</body>
+</html>
